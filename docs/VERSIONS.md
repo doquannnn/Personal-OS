@@ -21,7 +21,7 @@ Mỗi phiên bản bổ sung một phần nhỏ, có thể sử dụng được 
 - llama.cpp qua Dart FFI: chạy model local.
 - GGUF + JSON manifest: file model và thông tin model.
 
-**Chưa có:** database, backend, tài khoản, đồng bộ, voice và các tính năng native như Live Activity.
+**Chưa có:** API backend, database, tài khoản, đồng bộ, voice và các tính năng native như Live Activity. Thư mục `backend/` hiện chỉ là bộ khung Python.
 
 ---
 
