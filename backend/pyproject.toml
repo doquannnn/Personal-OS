@@ -15,3 +15,29 @@ personal-os = "personal_os:main"
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.pyrefly]
+python-version = "3.12"
+project-includes = ["src", "tests"]
+search-path = ["src"]
+python-interpreter-path = ".venv/bin/python"
+
+[tool.ruff]
+target-version = "py312"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --import-mode=importlib"
+strict_config = true
+strict_markers = true
+
+[dependency-groups]
+dev = [
+    "pyrefly>=1.3.2",
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
