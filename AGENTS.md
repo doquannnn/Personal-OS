@@ -8,6 +8,8 @@ Toàn bộ mã nguồn, tài liệu, tên hiển thị và trao đổi trong rep
 
 Không cài hoặc chạy dependency toàn cục. Mỗi ngôn ngữ phải khai báo dependency trong manifest được commit:
 
+Mặc định thực hiện theo từng bước: chỉ chạy lệnh tiếp theo khi người dùng đã duyệt kết quả của lệnh trước. Chỉ chạy liên tiếp toàn bộ các lệnh khi người dùng nói rõ không cần duyệt từng lệnh.
+
 - Python: `pyproject.toml` là nguồn chính; `requirements.txt` là danh sách tương thích khi cần cài bằng pip.
 - Flutter/Dart: `pubspec.yaml` là nguồn chính; không sửa `pubspec.lock` thủ công.
 
