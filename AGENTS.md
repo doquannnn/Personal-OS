@@ -17,6 +17,10 @@ Với Python, dùng `uv` để tạo và quản lý `backend/.venv`. Chạy các
 
 Với Flutter/Dart, chạy `flutter pub get` sau khi đổi `pubspec.yaml`, rồi dùng `flutter run`, `flutter analyze` hoặc `flutter test`. Chỉ dùng package đã khai báo trong `pubspec.yaml`.
 
+## Tài liệu thư viện
+
+Khi cần tài liệu hoặc cú pháp hiện hành của thư viện, framework hay API phụ thuộc, ưu tiên tra Context7 trước khi triển khai. Nêu rõ phiên bản dependency khi phiên bản ảnh hưởng đến câu trả lời.
+
 ## Quy ước mã và kiểm thử
 
 Định dạng Dart bằng `dart format`; dùng `snake_case.dart`, `PascalCase` cho kiểu và `camelCase` cho biến, hàm, provider. Giữ nghiệp vụ độc lập với model provider và nền tảng; bọc FFI/native API sau adapter nhỏ. Đặt test Dart tại `test/` với tên `<tinh_nang>_test.dart`; thêm test cho hành vi mới.
