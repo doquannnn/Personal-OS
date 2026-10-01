@@ -1,7 +1,24 @@
 import 'package:flutter/material.dart';
 
+import 'core/design/app_theme.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(const PersonalOsApp());
+}
+
+class PersonalOsApp extends StatelessWidget {
+  const PersonalOsApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Personal OS',
+      theme: AppTheme.light(),
+      darkTheme: AppTheme.dark(),
+      themeMode: ThemeMode.system,
+      home: const MyHomePage(title: 'Personal OS'),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
