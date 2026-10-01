@@ -5,7 +5,7 @@
 ## Cấu trúc repository
 
 - `backend/`: backend Python, dependency và môi trường được quản lý bằng `uv`.
-- `frontend/`: ứng dụng Flutter/Dart sẽ được thêm sau.
+- `frontend/`: ứng dụng Flutter/Dart cho Linux, Windows và macOS; SDK được quản lý cục bộ bằng FVM.
 - `docs/`: tài liệu phạm vi và phiên bản sản phẩm.
 
 Để thiết lập backend:
@@ -15,6 +15,8 @@ cd backend
 uv sync
 uv run personal-os
 ```
+
+Để thiết lập frontend, xem [hướng dẫn frontend](frontend/README.md).
 
 ## Phiên bản hiện tại — v0.1
 

@@ -6,6 +6,8 @@ __pycache__/
 # Flutter/Dart
 .dart_tool/
 build/
+.fvm/
+frontend/.tools/
 
 # Model và bí mật cục bộ
 *.gguf
